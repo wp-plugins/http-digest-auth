@@ -43,6 +43,8 @@ This can be changed from **Users > Your Profile**.
 * After activating this plugin for the first time you'll be prompted for HTTP credentials when you logout
 * Similarly if you change your HTTP username or password you'll be prompted for this when you logout
 
+The [HTTP Digest Authentication Plugin](http://jesin.tk/wordpress-plugins/http-digest-authentication/) official homepage.
+
 == Installation ==
 1. Unzip and upload the `http-digest-auth` folder to the `/wp-content/plugins/` directory.
 2. Activate the <strong>HTTP Digest Authentication</strong> plugin through the 'Plugins' menu in WordPress.
