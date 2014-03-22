@@ -2,8 +2,8 @@
 Contributors: jesin
 Tags: Auth, authenticate, hacking, http digest, login, password, secure, security, security plugin, two factor auth
 Requires at least: 3.1.0
-Tested up to: 3.6.1
-Stable tag: 1.0
+Tested up to: 3.8.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,12 @@ This plugin adds an additional layer of protection for the **wp-login.php** page
 So it doesn't require configuring web server files like *.htaccess* or [*.htdigest*](http://jesin.tk/tools/htdigest-generator-tool/) and works on all web hosting environments.  
 
 **Important:** If you already have a plugin which does HTTP Authentication please deactivate it before activating this plugin. Similarly if you have configured your web server to do HTTP authentication on the wp-login.php file please remove it before using this plugin.
+
+If you are using FastCGI PHP this plugin may keep prompting for the credentials even if you enter the right pair, in this case use the following in your __`.htaccess`__ file
+
+	<IfModule mod_setenvif.c>
+	SetEnvIfNoCase ^Authorization$ "(.+)" PHP_AUTH_DIGEST=$1
+	</IfModule>
 
 = Advantages of HTTP Digest Authentication =
 
@@ -42,6 +48,8 @@ Password: password
 This can be changed from **Users > Your Profile**.
 * After activating this plugin for the first time you'll be prompted for HTTP credentials when you logout
 * Similarly if you change your HTTP username or password you'll be prompted for this when you logout
+
+The [HTTP Digest Authentication Plugin](http://jesin.tk/wordpress-plugins/http-digest-authentication/) official homepage.
 
 == Installation ==
 1. Unzip and upload the `http-digest-auth` folder to the `/wp-content/plugins/` directory.
@@ -89,9 +97,13 @@ By default if you access the **wp-login.php** page using your HTTP credentials, 
 This security measure can be disabled by ticking this option.
 
 = Are the HTTP credentials stored in the database even after this plugin is deactivated/deleted? =
-Deactivating this plugin doesn't affect the credentials but deleteing the plugin erases all HTTP user credentials leaving no trace of it in the database.
+Deactivating this plugin doesn't affect the credentials but deleting the plugin erases all HTTP user credentials leaving no trace of it in the database.
 
 == Changelog ==
+
+= 1.1 =
+* Reduced repetitive code with inheritance
+* `.htaccess` rules for FastCGI PHP
 
 = 1.0 =
 * Initial version
