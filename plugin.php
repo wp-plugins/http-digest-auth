@@ -3,7 +3,7 @@
 Plugin Name: HTTP Digest Authentication
 Plugin URI: http://jesin.tk/wordpress-plugins/http-digest-authentication/
 Description: Secure your <strong>wp-login.php</strong> page with <a href="http://en.wikipedia.org/wiki/Digest_access_authentication">HTTP Digest Authentication</a> without the need of Web server config changes or additional modules.
-Version: 1.1
+Version: 1.2
 Author: Jesin
 Author URI: http://jesin.tk
 License: GPLv2 or later
@@ -123,6 +123,9 @@ if( !class_exists('HTTP_Digest_Auth_plugin') )
 			$this->digestParts = $this->digestParse( $digest );
 
 			$users = $this->user_credentials();
+
+			if ( ! isset( $users[ $this->digestParts['username'] ] ) )
+				$this->requireLogin( $realm, $nonce );
 
 			// Based on all the info we gathered we can figure out what the response should be
 			$A1 = md5( $this->digestParts['username'] . ':' . $realm . ':' . ( isset($users[$this->digestParts['username']]) ? $users[$this->digestParts['username']] : NULL ) );

@@ -2,8 +2,8 @@
 Contributors: jesin
 Tags: Auth, authenticate, hacking, http digest, login, password, secure, security, security plugin, two factor auth
 Requires at least: 3.1.0
-Tested up to: 3.9
-Stable tag: 1.1
+Tested up to: 3.9.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,11 @@ Password: password
 This can be changed from **Users > Your Profile**.
 * After activating this plugin for the first time you'll be prompted for HTTP credentials when you logout
 * Similarly if you change your HTTP username or password you'll be prompted for this when you logout
+
+= Available languages =
+
+* English
+* Serbo-Croatian by [Borisa Djuraskovic](http://www.webhostinghub.com/)
 
 The [HTTP Digest Authentication Plugin](http://jesin.tk/wordpress-plugins/http-digest-authentication/) official homepage.
 
@@ -101,11 +106,18 @@ Deactivating this plugin doesn't affect the credentials but deleting the plugin 
 
 == Changelog ==
 
+= 1.2 =
+* 26th May 2014
+* Fixed bug that allowed logging in with empty credentials
+* Added Serbo-Croatian language, props [Borisa Djuraskovic](http://www.webhostinghub.com/)
+
 = 1.1 =
+* 22nd March 2014
 * Reduced repetitive code with inheritance
 * `.htaccess` rules for FastCGI PHP
 
 = 1.0 =
+* 16th October 2013
 * Initial version
 
 == Screenshots ==
