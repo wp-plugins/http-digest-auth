@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HTTP Digest Authentication Plugin\n"
+"POT-Creation-Date: 2013-10-16 23:33+0530\n"
+"PO-Revision-Date: 2014-02-10 12:51+0100\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: Jesin <me@jesin.in>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin-options.php:35
+msgid "HTTP Digest Authentication credentials"
+msgstr "HTTP Digest Authentication akreditiv"
+
+#: ../admin-options.php:36
+msgid ""
+"Changing the username and/or password will prompt you for the new "
+"credentials when you logout."
+msgstr ""
+"Promena korisničkog ime i / ili lozinke će  tražiti nove akreditive kada se "
+"odjavite ."
+
+#: ../admin-options.php:39
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#: ../admin-options.php:42
+#, php-format
+msgid "Allowed characters %s, everything else will be removed."
+msgstr "Dozvoljeni karakteri %s, sve ostalo će biti uklonjeno"
+
+#: ../admin-options.php:46
+msgid "Password:"
+msgstr "Šifra:"
+
+#: ../admin-options.php:48
+msgid ""
+"If you would like to change the password type a new one else leave it blank."
+msgstr "Ukoliko želite da promenite tip lozinke ostavite prazno ."
+
+#: ../admin-options.php:55
+msgid "Anyone can use these credentials"
+msgstr "Svako može da koristi te akreditive"
+
+#: ../admin-options.php:57
+#, php-format
+msgid ""
+"By default only the WordPress user %s will be able to login if these "
+"credentials are used to view %s. %s\n"
+"\t\t\t\t\t\tChecking this option will allow any user to login to WordPress "
+"after entering these credentials."
+msgstr ""
+"Po default samo  WordPress korisnik %s će moći da se uloguje u ove "
+"akreditive koje se koriste za pregled %s. %s\n"
+"\t\t\t\t\t\tČekiranje ove opcije će dozvoliti svakom korisniku da se uloguje "
+"u WordPress nakon unošenja tih akreditiva."
+
+#: ../admin-options.php:74
+msgid "HTTP Username already exists please choose something else"
+msgstr "HTTP Korisničko ime već postoji izaberite nešto drugo"
+
+#: ../admin-options.php:113
+msgid "Read This!"
+msgstr "Pročitajte ovo!"
+
+#: ../admin-options.php:115
+#, php-format
+msgid ""
+"Thanks for using this plugin. A default HTTP username/password has been "
+"created for all users as follows %s"
+msgstr ""
+"Hvala što koristite ovaj plugin . Default HTTP korisničko ime / lozinka je "
+"stvorena za sve korisnike , kao što sledi % s"
+
+#: ../admin-options.php:116
+msgid ""
+"You will be prompted for these credentials the first time you logout after "
+"enabling this plugin."
+msgstr ""
+"Bićete upitani za ove akreditive prvi put kada se odjavite nakon "
+"omogućavanja ovpg plugin ."
+
+#: ../admin-options.php:122
+#, php-format
+msgid "Change your HTTP Username/Password by going to Users %sYour Profile%s"
+msgstr ""
+"Promenite Vaše HTTP ime / lozinka koju će Korisnicima % sIour Profil % s"
+
+#: ../admin-options.php:133
+#, php-format
+msgid "HTTP credentials of the new user %s"
+msgstr "HTTP akreditive novog korisnika % s"
+
+#: ../plugin.php:166 ../plugin.php:168
+#, php-format
+msgid "%sYour %s Username%s"
+msgstr "%s vaše% s korisničko ime % s"
+
+#: ../plugin.php:170
+#, php-format
+msgid ""
+"Valid credentials required to view this page.%s If you have not changed the "
+"default HTTP credentials try using %s"
+msgstr ""
+"Potrebne da biste videli ovu stranicu važeće dokumente . %s S Ako niste "
+"promenili podrazumevane HTTP akreditive pokušajte da koristite % s"
+
+#: ../plugin.php:172
+#, php-format
+msgid "Username: %s"
+msgstr "Korisničko ime: %s"
+
+#: ../plugin.php:173
+#, php-format
+msgid "Password: %s"
+msgstr "Šifra: %s"
+
+#: ../plugin.php:175
+msgid "Access Denied"
+msgstr "Pristup odbijen"
+
+#: ../plugin.php:240
+#, php-format
+msgid "Your HTTP credentials are %sUsername: %sPassword: %s"
+msgstr "Vaši HTTP aakreditivi su%sKorisničko ime: %sŠifra: %s"
+
+#: ../plugin.php:256
+msgid ""
+"Your WordPress credentials do not match with the HTTP digest credentials"
+msgstr ""
+"Vašir WordPress akreditivi se ne podudaraju sa  HTTP digest akreditivima"
+
+#: ../plugin.php:270
+#, php-format
+msgid ""
+"You&#39;ve successfully logged out of both WordPress and HTTP Digest.<br /"
+"><br />You may safely close the window.<br /><br /><a href=\"%s\">Login "
+"again</a>"
+msgstr ""
+"Vaš&#39;ve uspešni log out sa oba WordPress i HTTP Digest.<br /><br />Možete "
+"bezbedno zatvoriti prozor..<br /><br /><a href=\"%s\">Login opet</a>"
+
+#: ../plugin.php:277
+#, php-format
+msgid "HTTP login: %s"
+msgstr "HTTP login: %s"
