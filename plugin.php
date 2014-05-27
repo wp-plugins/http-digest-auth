@@ -15,7 +15,7 @@ if ( !defined( 'DB_NAME' ) )
 	die;
 }
 
-define( 'HTTP_DIGEST_AUTH_VERSION', '1.1' );
+define( 'HTTP_DIGEST_AUTH_VERSION', '1.2' );
 
 if( !class_exists('HTTP_Digest_Auth_plugin') )
 {
