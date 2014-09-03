@@ -39,13 +39,13 @@ if( !class_exists( 'HTTP_Digest_Auth_plugin_admin' ) )
 				<tr>
 					<th><label for="<?php echo $this->slug; ?>_username"><?php _e( 'Username:', $this->slug ); ?></label></th>
 					<td>
-						<input style="line-height:1" id="<?php echo $this->slug; ?>_username" type="text" class="regular-text" name="<?php echo $this->slug; ?>_username" value="<?php echo get_user_meta( $user->ID, $this->slug.'_username', TRUE ); ?>" />
+						<input id="<?php echo $this->slug; ?>_username" type="text" class="regular-text" name="<?php echo $this->slug; ?>_username" value="<?php echo get_user_meta( $user->ID, $this->slug.'_username', TRUE ); ?>" />
 						<span class="description"><?php printf( __( 'Allowed characters %s, everything else will be removed.', $this->slug ), '<code>A-Z a-z 0-9</code> and underscores' ); ?></span>
 					</td>
 				</tr>
 				<tr>
 					<th><label for="<?php echo $this->slug; ?>_password"><?php _e( 'Password:', $this->slug ); ?></label></th>
-					<td><input style="line-height:1" id="<?php echo $this->slug; ?>_password" type="password" class="regular-text" name="<?php echo $this->slug; ?>_password" value="" />
+					<td><input id="<?php echo $this->slug; ?>_password" type="password" class="regular-text" name="<?php echo $this->slug; ?>_password" value="" />
 					<span class="description"><?php _e( 'If you would like to change the password type a new one else leave it blank.', $this->slug ); ?></span></td>
 				</tr>
 				<tr>

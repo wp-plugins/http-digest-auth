@@ -2,8 +2,8 @@
 Contributors: jesin
 Tags: Auth, authenticate, hacking, http digest, login, password, secure, security, security plugin, two factor auth
 Requires at least: 3.1.0
-Tested up to: 3.9.1
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,10 @@ This security measure can be disabled by ticking this option.
 Deactivating this plugin doesn't affect the credentials but deleting the plugin erases all HTTP user credentials leaving no trace of it in the database.
 
 == Changelog ==
+
+= 1.2.1 =
+* 3rd September 2014
+* Removed `line-height` styling on input boxes
 
 = 1.2 =
 * 26th May 2014
