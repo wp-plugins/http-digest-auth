@@ -2,7 +2,7 @@
 Contributors: jesin
 Tags: Auth, authenticate, hacking, http digest, login, password, secure, security, security plugin, two factor auth
 Requires at least: 3.1.0
-Tested up to: 4.1.1
+Tested up to: 4.3
 Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Protect your wp-login.php page with HTTP Digest Authentication without the need 
 == Description ==
 
 This plugin adds an additional layer of protection for the **wp-login.php** page using [HTTP Digest Authentication](http://en.wikipedia.org/wiki/Digest_access_authentication) with the PHP [header()](http://php.net/header) function.  
-So it doesn't require configuring web server files like *.htaccess* or [*.htdigest*](http://jesin.tk/tools/htdigest-generator-tool/) and works on all web hosting environments.  
+So it doesn't require configuring web server files like *.htaccess* or [*.htdigest*](http://websistent.com/tools/htdigest-generator-tool/) and works on all web hosting environments.  
 
 **Important:** If you already have a plugin which does HTTP Authentication please deactivate it before activating this plugin. Similarly if you have configured your web server to do HTTP authentication on the wp-login.php file please remove it before using this plugin.
 
@@ -29,7 +29,7 @@ If you are using FastCGI PHP this plugin may keep prompting for the credentials 
 
 >*The BA (Basic Authentication) mechanism provides no confidentiality protection for the transmitted credentials. They are merely encoded with BASE64 in transit, but not encrypted or hashed in any way.*
 
-* Digest Authentication on the other hand uses [MD5](http://jesin.tk/tools/md5-encryption-tool/) on the credentials making it "one way" 
+* Digest Authentication on the other hand uses [MD5](http://websistent.com/tools/md5-encryption-tool/) on the credentials making it "one way" 
 * Uses server and client [nonce](http://en.wikipedia.org/wiki/Cryptographic_nonce)s to prevent replay attacks
 
 = Features of the HTTP Digest Auth plugin =
@@ -54,7 +54,7 @@ This can be changed from **Users > Your Profile**.
 * English
 * Serbo-Croatian by [Borisa Djuraskovic](http://www.webhostinghub.com/)
 
-The [HTTP Digest Authentication Plugin](http://jesin.tk/wordpress-plugins/http-digest-authentication/) official homepage.
+The [HTTP Digest Authentication Plugin](http://websistent.com/wordpress-plugins/http-digest-authentication/) official homepage.
 
 == Installation ==
 1. Unzip and upload the `http-digest-auth` folder to the `/wp-content/plugins/` directory.

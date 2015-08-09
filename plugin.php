@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: HTTP Digest Authentication
-Plugin URI: http://jesin.tk/wordpress-plugins/http-digest-authentication/
+Plugin URI: http://websistent.com/wordpress-plugins/http-digest-authentication/
 Description: Secure your <strong>wp-login.php</strong> page with <a href="http://en.wikipedia.org/wiki/Digest_access_authentication">HTTP Digest Authentication</a> without the need of Web server config changes or additional modules.
 Version: 1.2.1
 Author: Jesin
-Author URI: http://jesin.tk
+Author URI: http://websistent.com
 License: GPLv2 or later
 */
 
